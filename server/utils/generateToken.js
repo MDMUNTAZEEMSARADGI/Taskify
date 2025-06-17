@@ -4,7 +4,7 @@ dotenv.config();
 
 const TOKEN_EXPIRE = "24h";
 
-export const generatedToken = (user) => {
+const generatedToken = (user) => {
   const secret = process.env.JWT_SECRET_KEY || "muntazeem";
   if (!secret) throw new Error("JWT_SECRET_KEY IS NOT DEFINED");
 
@@ -12,3 +12,5 @@ export const generatedToken = (user) => {
     expiresIn: TOKEN_EXPIRE,
   });
 };
+
+export default generatedToken;

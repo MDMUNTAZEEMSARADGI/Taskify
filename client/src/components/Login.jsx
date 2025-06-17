@@ -20,7 +20,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
     const token = localStorage.getItem("token");
     const userId = localStorage.getItem("userId");
     if (token) {
-      (async () => {
+      (async () => { 
         try {
           const { data } = await axios.get(`${url}/api/user/me`, {
             headers: { Authorization: `Bearer ${token}` },

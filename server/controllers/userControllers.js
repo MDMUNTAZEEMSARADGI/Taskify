@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import bcrypt from "bcryptjs";
 import validator from "validator";
-import { generatedToken } from "../utils/generateToken.js";
+import generatedToken from "../utils/generateToken.js";
 
 //REGISTER
 export const registerUser = async (req, res) => {
