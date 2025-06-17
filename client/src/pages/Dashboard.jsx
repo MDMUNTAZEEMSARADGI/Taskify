@@ -91,7 +91,6 @@ const Dashboard = () => {
         setShowModal(false);
         setSelectTask(null);
       } catch (error) {}
-      I;
       console.error("Error saving tasks:", error);
     },
     [refreshTasks]

@@ -21,6 +21,10 @@ connectDB();
 //Routes
 app.use("/api/user", userRouter);
 app.use("/api/tasks", taskRoute);
+
+app.get("/",(req,res)=>{
+  res.send("API Working")
+})
  
 app.listen(port, (req, res) => {
   console.log(`Server is listening on http://localhost:${port}`);
