@@ -1,6 +1,7 @@
 {
   "name": "muntazeem",
   "version": "1.0.0",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "nodemon main.js"
@@ -9,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "type": "module",
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
