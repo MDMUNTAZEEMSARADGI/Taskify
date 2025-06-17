@@ -10,7 +10,7 @@ import { CheckCircle2, MoreVertical, Calendar, Clock } from "lucide-react";
 import { format, isToday } from "date-fns";
 import TaskModal from "./TaskModal";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://taskify-server-k1l1.onrender.com/api/tasks";
 
 const TaskItem = ({ task, onRefresh, showCompletedCheckBox, onEdit }) => {
   const taskId = task._id || task.id;

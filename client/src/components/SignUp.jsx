@@ -10,7 +10,7 @@ import {
 } from "../assets/dummy.jsx";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://taskify-server-k1l1.onrender.com";
 const INITIAL_FORM = { name: "", email: "", password: "" };
 
 const SignUp = ({ onSwitchMode }) => {

@@ -14,7 +14,7 @@ import {
   Flag,
 } from "lucide-react";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://taskify-server-k1l1.onrender.com/api/tasks";
 
 const TaskModal = ({ isOpen, onSave, onClose, onLogout, taskToEdit }) => {
   const [taskData, setTaskData] = useState(DEFAULT_TASK);

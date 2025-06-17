@@ -18,9 +18,12 @@ const Layout = ({ user, onLogout }) => {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("No Auth Token Found");
 
-      const { data } = await axios.get("http://localhost:5000/api/tasks/gp", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const { data } = await axios.get(
+        "https://taskify-server-k1l1.onrender.com/api/tasks/gp",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
       const arr = Array.isArray(data)
         ? data

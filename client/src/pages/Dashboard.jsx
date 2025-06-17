@@ -28,7 +28,7 @@ import TaskModal from "../components/TaskModal.jsx";
 
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000/api/tasks";
+const API_BASE = "https://taskify-server-k1l1.onrender.com/api/tasks";
 
 const Dashboard = () => {
   const { tasks, refreshTasks } = useOutletContext();

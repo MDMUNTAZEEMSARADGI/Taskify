@@ -14,7 +14,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
   const [formData, setFormData] = useState(INITIAL_FORM);
 
   const navigate = useNavigate();
-  const url = "http://localhost:5000";
+  const url = "https://taskify-server-k1l1.onrender.com";
 
   useEffect(() => {
     const token = localStorage.getItem("token");
